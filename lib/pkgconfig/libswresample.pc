@@ -1,0 +1,14 @@
+prefix=/home/NDPhuc/WorkSpace/FFmpeg-release-8.0/output
+exec_prefix=${prefix}
+libdir=/home/NDPhuc/WorkSpace/FFmpeg-release-8.0/output/lib
+includedir=/home/NDPhuc/WorkSpace/FFmpeg-release-8.0/output/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 6.1.100
+Requires: 
+Requires.private: libavutil >= 60.8.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}

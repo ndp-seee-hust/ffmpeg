@@ -1,0 +1,14 @@
+prefix=/home/NDPhuc/WorkSpace/FFmpeg-release-8.0/output
+exec_prefix=${prefix}
+libdir=/home/NDPhuc/WorkSpace/FFmpeg-release-8.0/output/lib
+includedir=/home/NDPhuc/WorkSpace/FFmpeg-release-8.0/output/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 60.8.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lva_win32 -lva -lm -lssl -lcrypto -luser32 -lva -lbcrypt -latomic
+Cflags: -I${includedir}
